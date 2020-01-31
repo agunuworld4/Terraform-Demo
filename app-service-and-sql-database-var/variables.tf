@@ -1,5 +1,5 @@
 variable "resource-group-name" {
-  default = "myGroupResources"
+  default = "resource-group-name"
   description = "The prefix used for all resources in this example"
 }
 
