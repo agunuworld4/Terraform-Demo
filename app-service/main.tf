@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "test" {
-  name     = "terraform-resource-group"
-  location = "West Europe"
+  name     = "myGroupResources"
+  location = "East US 2"
 }
 
 resource "azurerm_app_service_plan" "test" {
