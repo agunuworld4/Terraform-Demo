@@ -1,7 +1,8 @@
 resource "azurerm_resource_group" "test" {
-  name     = "${var.myGroupResuorces}"
+  name     = "${var.resource-group-name}"
   location = "${var.location}"
 }
+
 
 resource "azurerm_app_service_plan" "test" {
   name                = "example-appserviceplan"
