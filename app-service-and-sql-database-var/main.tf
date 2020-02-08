@@ -1,10 +1,3 @@
-provider "azurerm" {
-}
-
-variable "location" {
-  default = "ITinfraTutoria143"
-}
-
 resource "azurerm_resource_group" "test" {
   name     = "${var.location}-resources"
   location = "east US 2"
