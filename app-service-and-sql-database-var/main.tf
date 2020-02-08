@@ -1,7 +1,15 @@
-resource "azurerm_resource_group" "test" {
-  name     = "${var.resource-group-name}"
-  location = "${var.location}"
+provider "azurerm" {
 }
+
+variable "location" {
+  default = "ITinfraTutoria143"
+}
+
+resource "azurerm_resource_group" "test" {
+  name     = "${var.location}-resources"
+  location = "east US 2"
+}
+
 
 
 resource "azurerm_app_service_plan" "test" {
